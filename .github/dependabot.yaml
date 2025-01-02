@@ -1,0 +1,37 @@
+# Dependabot that automatically updates the packages to the latest version.
+
+---
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+      timezone: Europe/Warsaw
+      time: "12:00"
+    labels: [dependencies, workflow]
+
+  # - package-ecosystem: docker
+  #   directory: /
+  #   schedule:
+  #     interval: daily
+  #     timezone: Europe/Warsaw
+  #     time: "12:00"
+  #   labels: [dependencies, docker]
+
+  # - package-ecosystem: pip
+  #   directory: /
+  #   schedule:
+  #     interval: daily
+  #     timezone: Europe/Warsaw
+  #     time: "12:00"
+  #   labels: [dependencies, pip]
+
+  # - package-ecosystem: npm
+  #   directory: /
+  #   schedule:
+  #     interval: daily
+  #     timezone: Europe/Warsaw
+  #     time: "12:00"
+  #   labels: [dependencies, npm]
