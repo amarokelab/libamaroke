@@ -1,0 +1,26 @@
+# Linting commit messages on pull requests that follow the configuration.
+
+---
+name: Linting commit messages
+
+on: [pull_request]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  commitlint:
+    name: Commitlint
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run commitlint
+        uses: wagoid/commitlint-github-action@v6
+        with:
+          configFile: .commitlintrc.mjs
