@@ -1,6 +1,12 @@
-// Copyright (c) 2025 Marcin Różewski, Amarokelab
-
-// The main C demo program for the AMAROKE project.
+/*
+ * Copyright (c) 2025 Marcin Różewski, Amarokelab.
+ * All rights reserved.
+ *
+ * Demo program for the AMAROKE project.
+ *
+ * This file contains the examples usage of the first function on this library
+ * and in the future this file may be removed or moved in another place.
+ */
 
 #include "lib/amaroke.h"
 
