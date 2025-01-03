@@ -1,18 +1,26 @@
-// Copyright (c) 2025 Marcin Różewski, Amarokelab
-
-// The header C demo project file for the AMAROKE static library.
+/*
+ * Copyright (c) 2025 Marcin Różewski, Amarokelab.
+ * All rights reserved.
+ *
+ * Header file for the AMAROKE static library.
+ *
+ * This file declares functions for advanced terminal output, including text
+ * printing with customizable colors.  As the library evolves, more functions
+ * may be added to expand its capabilities.
+ */
 
 #ifndef AMAROKE_H
 #define AMAROKE_H
 
-/**
- * Advance color text message printing on the stdout.
+/*
+ * Prints a colored text message to the standard output.
  *
- * @note Wrapper for the ANSI escape sequence, where 0 is black, 255 is white.
+ * This function is a wrapper for ANSI escape sequences, allowing the user to
+ * specify both background and foreground colors for terminal output.
  *
- * @param text The text message to stdout print in the color on the terminal.
- * @param background The background color of the text.  A number from 0 to 255.
- * @param foreground The foreground color of the text.  A number from 0 to 255.
+ * The first parameter is the text message to print in the color, and the
+ * background and foreground color is a number from 0 to 255, where 0 is black
+ * and 255 is white.
  */
 void cprint(const char *text, int background, int foreground);
 
