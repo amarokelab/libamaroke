@@ -19,9 +19,9 @@
  * specify both background and foreground colors for terminal output.
  *
  * The first parameter is the text message to print in the color, and the
- * background and foreground color is a number from 0 to 255, where 0 is black
+ * foreground and background color is a number from 0 to 255, where 0 is black
  * and 255 is white.
  */
-void cprint(const char *text, int background, int foreground);
+void cprint(const char *text, int foreground, int background);
 
 #endif
