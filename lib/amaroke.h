@@ -12,6 +12,8 @@
 #ifndef AMAROKE_H
 #define AMAROKE_H
 
+enum color { BLACK = 0, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE };
+
 /*
  * Prints a colored text message to the standard output.
  *
