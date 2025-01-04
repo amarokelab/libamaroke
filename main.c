@@ -13,8 +13,8 @@
 int main(void)
 {
     const char *message  = " AMAROKE ";
-    const int   fg_color = 7;  // Text color
-    const int   bg_color = 4;  // Background color
+    const int   fg_color = WHITE;
+    const int   bg_color = BLUE;
 
     cprint(message, fg_color, bg_color);
 
