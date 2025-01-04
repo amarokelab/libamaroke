@@ -24,21 +24,21 @@ CheckOptions:
   - key: readability-identifier-naming.EnumCase
     value: CamelCase
   - key: readability-identifier-naming.FunctionCase
-    value: snake_case
+    value: lower_case
   - key: readability-identifier-naming.GlobalConstantCase
     value: UPPER_CASE
   - key: readability-identifier-naming.GlobalVariableCase
     value: UPPER_CASE
   - key: readability-identifier-naming.MemberCase
-    value: snake_case
+    value: lower_case
   - key: readability-identifier-naming.ParameterCase
-    value: snake_case
+    value: lower_case
   - key: readability-identifier-naming.StructCase
-    value: snake_case
+    value: lower_case
   - key: readability-identifier-naming.UnionCase
     value: CamelCase
   - key: readability-identifier-naming.VariableCase
-    value: snake_case
+    value: lower_case
 
   # Length checking options
   - key: readability-identifier-length.MinimumParameterNameLength
