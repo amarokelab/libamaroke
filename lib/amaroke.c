@@ -13,7 +13,7 @@
 
 #include <stdio.h>
 
-void cprint(const char *text, int background, int foreground)
+void cprint(const char *text, int foreground, int background)
 {
-    printf("\e[48;5;%dm\e[38;5;%dm%s\e[0m\n", background, foreground, text);
+    printf("\e[38;5;%dm\e[48;5;%dm%s\e[0m\n", foreground, background, text);
 }
